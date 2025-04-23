@@ -3,90 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Misbahjabin Shaikh | Data Analyst</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Misbahjabin Shaikh | Data Analyst Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #ffffff;
-      color: #222;
-      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f7;
+      color: #1f1f1f;
     }
     header {
-      background: linear-gradient(to right, #4b6cb7, #182848);
-      color: #fff;
+      background: linear-gradient(90deg, #4e54c8, #8f94fb);
+      color: white;
+      padding: 3rem 2rem;
       text-align: center;
-      padding: 4rem 2rem;
     }
     header h1 {
       font-size: 2.8rem;
-      font-weight: 600;
+      margin-bottom: 0.3rem;
     }
     header p {
       font-size: 1.2rem;
-      margin-top: 0.5rem;
+      font-weight: 400;
+      opacity: 0.9;
     }
     section {
-      padding: 4rem 2rem;
-      max-width: 1000px;
+      padding: 3rem 2rem;
+      max-width: 1200px;
       margin: auto;
     }
     h2 {
+      color: #4e54c8;
       font-size: 2rem;
-      color: #4b6cb7;
-      border-bottom: 2px solid #ddd;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #4e54c8;
       padding-bottom: 0.5rem;
-      margin-bottom: 2rem;
     }
-    .content-grid {
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
     }
     .card {
-      background: #f9f9f9;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      padding: 2rem;
-      transition: all 0.3s ease;
+      background-color: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      padding: 1.5rem;
+      transition: transform 0.3s ease;
     }
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     }
-    .card-title {
-      font-weight: 600;
-      margin-bottom: 0.5rem;
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
       color: #333;
     }
     .tag {
       display: inline-block;
-      background: #e8f0fe;
-      color: #3c5a99;
-      border-radius: 5px;
-      font-size: 0.8rem;
-      padding: 4px 10px;
-      margin: 2px 4px 6px 0;
+      background-color: #e0e7ff;
+      color: #4e54c8;
+      border-radius: 0.4rem;
+      padding: 0.2rem 0.6rem;
+      font-size: 0.85rem;
+      margin: 0.2rem;
+    }
+    .skills-section ul {
+      padding-left: 1.5rem;
+    }
+    .skills-section li {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
     }
     footer {
+      background-color: #2d2f41;
+      color: white;
       text-align: center;
-      padding: 2rem;
-      background: #f4f7fc;
+      padding: 1.5rem;
       font-size: 0.95rem;
     }
     footer a {
-      color: #4b6cb7;
+      color: #8f94fb;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Misbahjabin Shaikh</h1>
     <p>Aspiring Data Analyst | Machine Learning Enthusiast</p>
@@ -94,83 +102,71 @@
 
   <section>
     <h2>About Me</h2>
-    <p>I use data to uncover insights, solve problems, and build intelligent systems. I'm experienced in data analysis, machine learning, and building interactive dashboards, with a background in Applied Statistics and Data Science.</p>
+    <p>
+      I am passionate about using data to uncover insights, solve real-world problems, and build intelligent systems. With a strong academic background in Applied Statistics and Data Science, I specialize in data-driven storytelling, machine learning, and developing interactive dashboards.
+    </p>
   </section>
 
   <section>
     <h2>Projects</h2>
-    <div class="content-grid">
+    <div class="grid">
       <div class="card">
-        <div class="card-title">Netflix Titles Dashboard</div>
-        <p>Data exploration and dashboard development using Python and Tableau.</p>
-        <span class="tag">Python</span><span class="tag">Tableau</span>
+        <h3>Netflix Titles Analysis</h3>
+        <p>Explored trends using Python & Tableau.</p>
+        <span class="tag">Python</span><span class="tag">Google Colab</span><span class="tag">Tableau</span>
       </div>
       <div class="card">
-        <div class="card-title">ANPR System</div>
-        <p>Faster R-CNN and ResNet-50 based license plate detection system.</p>
-        <span class="tag">PyTorch</span><span class="tag">OpenCV</span>
+        <h3>ANPR for Cars</h3>
+        <p>Used Faster R-CNN with ResNet-50 on images.</p>
+        <span class="tag">PyTorch</span><span class="tag">OpenCV</span><span class="tag">Faster R-CNN</span>
       </div>
       <div class="card">
-        <div class="card-title">EV Charging Optimization</div>
-        <p>Linear Programming, clustering, and forecasting to optimize charging stations.</p>
-        <span class="tag">Scikit-learn</span><span class="tag">Python</span>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Experience</h2>
-    <div class="content-grid">
-      <div class="card">
-        <div class="card-title">Freelance Analyst | Upwork</div>
-        <p>Providing EDA, dashboards, and insights remotely using Excel, Python, Power BI.</p>
-        <small>Apr 2025 - Present | Remote</small>
+        <h3>EV Charging Optimization</h3>
+        <p>Optimized charger placement using ML & LP.</p>
+        <span class="tag">Scikit-learn</span><span class="tag">PuLP</span>
       </div>
       <div class="card">
-        <div class="card-title">Data Management | Auto Credit</div>
-        <p>Data entry, maintenance, dashboard creation, and team collaboration.</p>
-        <small>Sep 2020 - Mar 2022 | Surat, India</small>
+        <h3>Tesla Stock Forecasting</h3>
+        <p>Used ARIMA, SARIMA in R for predictions.</p>
+        <span class="tag">R</span><span class="tag">ARIMA</span><span class="tag">Tidyverse</span>
+      </div>
+      <div class="card">
+        <h3>Stack Overflow Survey</h3>
+        <p>Wrangled & analyzed 2019 data with Cognos.</p>
+        <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Cognos</span>
       </div>
     </div>
   </section>
 
-  <section>
-    <h2>Education</h2>
-    <div class="content-grid">
-      <div class="card">
-        <div class="card-title">The University of Texas at Arlington</div>
-        <p>M.S. in Applied Statistics and Data Science (GPA: 3.88)</p>
-        <small>Aug 2023 - Dec 2024</small>
-      </div>
-      <div class="card">
-        <div class="card-title">Veer Narmad South Gujarat University</div>
-        <p>Bachelor's in Computer Applications (GPA: 3.69)</p>
-        <small>2017 - 2020</small>
-      </div>
-    </div>
+  <section class="skills-section">
+    <h2>Tools & Skills</h2>
+    <ul>
+      <li><strong>Programming:</strong> Python, SQL, R, Java, C</li>
+      <li><strong>Machine Learning:</strong> Scikit-learn, Regression, Classification</li>
+      <li><strong>Data Analysis:</strong> Cleaning, EDA, Feature Engineering</li>
+      <li><strong>Visualization:</strong> Tableau, Power BI, Matplotlib</li>
+      <li><strong>Tools:</strong> Google Colab, IBM Watson Studio</li>
+      <li><strong>Soft Skills:</strong> Communication, Problem-solving, Adaptability, Teamwork</li>
+    </ul>
   </section>
 
   <section>
     <h2>Certifications</h2>
-    <div class="content-grid">
-      <div class="card">
-        <div class="card-title">IBM Generative AI</div>
-        <p>Introduction and Applications (Feb 2025)</p>
-      </div>
-      <div class="card">
-        <div class="card-title">Python for Data Science - IBM</div>
-        <p>Project-based certification (Feb 2025)</p>
-      </div>
-      <div class="card">
-        <div class="card-title">Meta: Front-End Development</div>
-        <p>Introduction to Web Development (Jan 2024)</p>
-      </div>
+    <div class="grid">
+      <div class="card"><strong>Generative AI – IBM (Feb 2025)</strong><br>ID: VVUR5FYIHIC5</div>
+      <div class="card"><strong>Python Project – IBM (Feb 2025)</strong><br>ID: X5IK6KJYYOZV</div>
+      <div class="card"><strong>IBM Data Analyst Capstone – Coursera (Jul 2024)</strong></div>
+      <div class="card"><strong>Intro to Front-End Dev – Meta (Jan 2024)</strong></div>
+      <div class="card"><strong>Machine Learning Project – UTA (May 2024)</strong></div>
+      <div class="card"><strong>Cloud Training – AWS (Apr 2024)</strong><br>ID: nxhzlpdnf2</div>
     </div>
   </section>
 
   <footer>
-    Connect with me: <a href="https://github.com/099Misbah">GitHub</a> | 
-    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
+    Connect with me: 
+    <a href="https://github.com/099Misbah" target="_blank">GitHub</a> | 
+    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
   </footer>
+
 </body>
 </html>
