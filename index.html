@@ -1,4 +1,3 @@
-<!-- Trigger rebuild -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,32 +10,56 @@
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: #f4f7fc;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background-color: #4b6cb7;
-      background-image: linear-gradient(to right, #4b6cb7, #182848);
+      background-color: #333;
       color: white;
-      padding: 2rem;
+      padding: 3rem;
       text-align: center;
+      background-image: linear-gradient(to right, #333, #4b6cb7);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-weight: 400;
     }
     section {
-      padding: 2rem;
-      max-width: 1000px;
+      padding: 4rem 2rem;
+      max-width: 1200px;
       margin: auto;
     }
     h2 {
       color: #4b6cb7;
-      border-bottom: 2px solid #ddd;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #4b6cb7;
       padding-bottom: 0.5rem;
     }
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
     .project, .certification {
-      margin-bottom: 1.5rem;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .project:hover, .certification:hover {
+      transform: translateY(-5px);
     }
     .project-title {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       font-weight: 600;
+      color: #333;
     }
     .tag {
       background-color: #e1ecf4;
@@ -44,13 +67,30 @@
       border-radius: 4px;
       padding: 2px 8px;
       margin-right: 5px;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
+    }
+    .project-description {
+      font-size: 1rem;
+      margin: 1rem 0;
+      color: #666;
+    }
+    .certification strong {
+      color: #4b6cb7;
     }
     footer {
-      background-color: #eee;
+      background-color: #333;
+      color: white;
+      padding: 1.5rem;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+      font-size: 1rem;
+    }
+    footer a {
+      color: #4b6cb7;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -63,36 +103,36 @@
   <section>
     <h2>About Me</h2>
     <p>
-      I'm passionate about using data to uncover insights, solve real-world problems, and build intelligent systems.
-      With a strong academic background in Applied Statistics and Data Science, I focus on data-driven storytelling,
-      machine learning, and interactive dashboards.
+      I am passionate about using data to uncover insights, solve real-world problems, and build intelligent systems. With a strong academic background in Applied Statistics and Data Science, I specialize in data-driven storytelling, machine learning, and developing interactive dashboards.
     </p>
 
     <h2>Projects</h2>
-    <div class="project">
-      <div class="project-title">Netflix Titles Analysis & Interactive Dashboard</div>
-      <p>Explored Netflix's content trends over time using Python and built an interactive Tableau dashboard.</p>
-      <span class="tag">Python</span><span class="tag">Google Colab</span><span class="tag">Tableau</span>
-    </div>
-    <div class="project">
-      <div class="project-title">Automatic Number Plate Recognition of Cars</div>
-      <p>Built an ANPR system using Faster R-CNN with ResNet-50 in PyTorch and OpenCV on 225 augmented images.</p>
-      <span class="tag">PyTorch</span><span class="tag">OpenCV</span><span class="tag">Faster R-CNN</span>
-    </div>
-    <div class="project">
-      <div class="project-title">EV Charging Station Optimization</div>
-      <p>Optimized EV charger allocation using Linear Programming, clustering, and demand forecasting.</p>
-      <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">PuLP</span>
-    </div>
-    <div class="project">
-      <div class="project-title">Tesla Stock Price Analysis</div>
-      <p>Forecasted Tesla stock prices using ARIMA, SARIMA, and exponential smoothing in R.</p>
-      <span class="tag">R</span><span class="tag">ARIMA</span><span class="tag">Tidyverse</span>
-    </div>
-    <div class="project">
-      <div class="project-title">Stack Overflow Developer Survey Analysis (2019)</div>
-      <p>End-to-end data analysis: scraping, wrangling, EDA, and dashboard using Python, SQL, and IBM Cognos.</p>
-      <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Cognos</span>
+    <div class="content">
+      <div class="project">
+        <div class="project-title">Netflix Titles Analysis & Interactive Dashboard</div>
+        <p class="project-description">Explored Netflix's content trends over time using Python and built an interactive Tableau dashboard.</p>
+        <span class="tag">Python</span><span class="tag">Google Colab</span><span class="tag">Tableau</span>
+      </div>
+      <div class="project">
+        <div class="project-title">Automatic Number Plate Recognition of Cars</div>
+        <p class="project-description">Built an ANPR system using Faster R-CNN with ResNet-50 in PyTorch and OpenCV on 225 augmented images.</p>
+        <span class="tag">PyTorch</span><span class="tag">OpenCV</span><span class="tag">Faster R-CNN</span>
+      </div>
+      <div class="project">
+        <div class="project-title">EV Charging Station Optimization</div>
+        <p class="project-description">Optimized EV charger allocation using Linear Programming, clustering, and demand forecasting.</p>
+        <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">PuLP</span>
+      </div>
+      <div class="project">
+        <div class="project-title">Tesla Stock Price Analysis</div>
+        <p class="project-description">Forecasted Tesla stock prices using ARIMA, SARIMA, and exponential smoothing in R.</p>
+        <span class="tag">R</span><span class="tag">ARIMA</span><span class="tag">Tidyverse</span>
+      </div>
+      <div class="project">
+        <div class="project-title">Stack Overflow Developer Survey Analysis (2019)</div>
+        <p class="project-description">End-to-end data analysis: scraping, wrangling, EDA, and dashboard using Python, SQL, and IBM Cognos.</p>
+        <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Cognos</span>
+      </div>
     </div>
 
     <h2>Tools & Skills</h2>
@@ -106,26 +146,28 @@
     </p>
 
     <h2>Certifications</h2>
-    <div class="certification">
-      <strong>Generative AI: Introduction and Applications – IBM (Feb 2025)</strong><br>
-      Credential ID: VVUR5FYIHIC5
-    </div>
-    <div class="certification">
-      <strong>Python Project for Data Science – IBM (Feb 2025)</strong><br>
-      Credential ID: X5IK6KJYYOZV
-    </div>
-    <div class="certification">
-      <strong>IBM Data Analyst Capstone Project – Coursera (Jul 2024)</strong>
-    </div>
-    <div class="certification">
-      <strong>Meta: Introduction to Front-End Development – Coursera (Jan 2024)</strong>
-    </div>
-    <div class="certification">
-      <strong>Outstanding Machine Learning Project – UTA (May 2024)</strong>
-    </div>
-    <div class="certification">
-      <strong>Intensive Cloud Computing Hands-on Training – AWS (Apr 2024)</strong><br>
-      Credential ID: nxhzlpdnf2
+    <div class="content">
+      <div class="certification">
+        <strong>Generative AI: Introduction and Applications – IBM (Feb 2025)</strong><br>
+        Credential ID: VVUR5FYIHIC5
+      </div>
+      <div class="certification">
+        <strong>Python Project for Data Science – IBM (Feb 2025)</strong><br>
+        Credential ID: X5IK6KJYYOZV
+      </div>
+      <div class="certification">
+        <strong>IBM Data Analyst Capstone Project – Coursera (Jul 2024)</strong>
+      </div>
+      <div class="certification">
+        <strong>Meta: Introduction to Front-End Development – Coursera (Jan 2024)</strong>
+      </div>
+      <div class="certification">
+        <strong>Outstanding Machine Learning Project – UTA (May 2024)</strong>
+      </div>
+      <div class="certification">
+        <strong>Intensive Cloud Computing Hands-on Training – AWS (Apr 2024)</strong><br>
+        Credential ID: nxhzlpdnf2
+      </div>
     </div>
   </section>
 
@@ -135,4 +177,3 @@
   </footer>
 </body>
 </html>
-
