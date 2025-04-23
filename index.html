@@ -6,92 +6,97 @@
   <title>Misbahjabin Shaikh | Data Analyst Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    * {
-      box-sizing: border-box;
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #18bc9c;
+      --bg-color: #f8f9fa;
+      --text-color: #2d3436;
     }
 
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      background-color: #f4f7fc;
-      color: #333;
+      background-color: var(--bg-color);
+      color: var(--text-color);
     }
 
     header {
-      background: linear-gradient(to right, #333, #4b6cb7);
+      background-color: var(--primary-color);
       color: white;
       text-align: center;
-      padding: 3rem 1rem;
+      padding: 4rem 1rem;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
     }
 
     header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
+      font-size: 1.3rem;
     }
 
     section {
-      padding: 4rem 2rem;
       max-width: 1100px;
-      margin: auto;
+      margin: 4rem auto;
+      padding: 0 2rem;
     }
 
     h2 {
       font-size: 2rem;
-      color: #4b6cb7;
-      border-bottom: 2px solid #4b6cb7;
-      padding-bottom: 0.5rem;
-      margin-bottom: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 0.3rem;
     }
 
-    .content {
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
     }
 
     .card {
       background-color: white;
-      padding: 2rem;
+      padding: 1.5rem;
       border-radius: 10px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--accent-color);
+    }
+
+    .tags {
+      margin-top: 1rem;
     }
 
     .tag {
-      display: inline-block;
-      background: #e1ecf4;
-      color: #39739d;
-      border-radius: 4px;
-      padding: 0.2rem 0.6rem;
+      background-color: var(--accent-color);
+      color: white;
+      padding: 3px 10px;
+      border-radius: 5px;
       font-size: 0.85rem;
-      margin-right: 0.4rem;
-    }
-
-    .section-text {
-      margin-bottom: 2rem;
+      margin-right: 5px;
     }
 
     footer {
-      text-align: center;
-      background-color: #333;
+      background-color: var(--primary-color);
       color: white;
-      padding: 2rem;
+      text-align: center;
+      padding: 2rem 1rem;
     }
 
     footer a {
-      color: #4b6cb7;
+      color: var(--accent-color);
       text-decoration: none;
-      font-weight: 600;
-      margin: 0 0.5rem;
     }
 
     footer a:hover {
@@ -102,62 +107,80 @@
 <body>
   <header>
     <h1>Misbahjabin Shaikh</h1>
-    <p>Aspiring Data Analyst | Machine Learning Enthusiast</p>
+    <p>Data Analyst | Data Scientist | ML Enthusiast</p>
   </header>
 
   <section>
     <h2>About Me</h2>
-    <p class="section-text">
-      I am passionate about using data to uncover insights, solve real-world problems, and build intelligent systems. With a strong academic background in Applied Statistics and Data Science, I specialize in data-driven storytelling, machine learning, and developing interactive dashboards.
-    </p>
+    <p>I’m passionate about transforming data into actionable insights using statistical methods, data visualization, and machine learning. I have a Master's in Applied Statistics & Data Science and industry experience in analytics.</p>
 
     <h2>Experience</h2>
-    <div class="content">
-      <div class="card">
-        <h3>Freelance Analyst | Data Visualization Specialist</h3>
-        <p><strong>Upwork (Remote) | Apr 2025 – Present</strong></p>
-        <p>I provide freelance data analysis and visualization services through Upwork, helping clients transform raw data into actionable insights.</p>
-        <p><strong>Tools:</strong> Excel, Google Sheets, Python (Pandas, Seaborn), Power BI, Tableau</p>
-        <p><strong>Services:</strong> EDA, dashboards, reports, visual storytelling, statistical summaries</p>
-      </div>
-      <div class="card">
-        <h3>Data Management</h3>
-        <p><strong>Auto Credit | Sep 2020 – Mar 2022 (Surat, India)</strong></p>
-        <p>Managed data entry, processing, and visualization for financial records. Built reports & dashboards using Tableau/Power BI and streamlined data workflows across departments.</p>
-      </div>
+    <div class="card">
+      <h3>Upwork – Freelance Analyst | Data Visualization Specialist</h3>
+      <p>Apr 2025 - Present · Remote (Part-time)<br>
+      Excel, Python, Tableau, Power BI – Data cleaning, visualizations, dashboards, reports</p>
+    </div>
+    <div class="card">
+      <h3>Auto Credit – Data Management</h3>
+      <p>Sep 2020 - Mar 2022 · Surat, India (Full-time)<br>
+      Excel, SQL, Tableau – Data maintenance, dashboard development, operational efficiency</p>
     </div>
 
     <h2>Education</h2>
-    <div class="content">
-      <div class="card">
-        <h3>The University of Texas at Arlington</h3>
-        <p><strong>Master’s in Applied Statistics & Data Science (2023–2024)</strong></p>
-        <p>GPA: 3.88</p>
-        <p>Skills: Machine Learning, Forecasting, NLP, Deep Learning, R, Python, Tableau</p>
-      </div>
-      <div class="card">
-        <h3>Veer Narmad South Gujarat University</h3>
-        <p><strong>Bachelor’s in Computer Applications (2017–2020)</strong></p>
-        <p>GPA: 3.69</p>
-        <p>Skills: Java, SQL, HTML/CSS, C++, JavaScript</p>
-      </div>
+    <div class="card">
+      <h3>The University of Texas at Arlington</h3>
+      <p>Master's in Applied Statistics & Data Science (Aug 2023 - Dec 2024)<br>GPA: 3.88</p>
+    </div>
+    <div class="card">
+      <h3>Veer Narmad South Gujarat University</h3>
+      <p>Bachelor’s in Computer Applications (2017 - 2020)<br>GPA: 3.69</p>
     </div>
 
     <h2>Projects</h2>
-    <div class="content">
-      <!-- Your project cards here as before -->
+    <div class="grid">
+      <div class="card">
+        <h3>Netflix Titles Analysis</h3>
+        <p>Data analysis & interactive Tableau dashboard on Netflix trends.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Tableau</span></div>
+      </div>
+      <div class="card">
+        <h3>ANPR System</h3>
+        <p>Automatic number plate recognition using PyTorch & OpenCV.</p>
+        <div class="tags"><span class="tag">PyTorch</span><span class="tag">OpenCV</span></div>
+      </div>
+      <div class="card">
+        <h3>EV Charging Optimization</h3>
+        <p>Charger placement via Linear Programming & Clustering.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Scikit-learn</span></div>
+      </div>
+      <div class="card">
+        <h3>Tesla Stock Analysis</h3>
+        <p>Forecasting stock prices using ARIMA & SARIMA in R.</p>
+        <div class="tags"><span class="tag">R</span><span class="tag">Time Series</span></div>
+      </div>
+      <div class="card">
+        <h3>Stack Overflow Survey Analysis</h3>
+        <p>Full pipeline from data scraping to Cognos dashboard.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Cognos</span></div>
+      </div>
     </div>
 
     <h2>Certifications</h2>
-    <div class="content">
-      <!-- Your certification cards as before -->
+    <div class="grid">
+      <div class="card"><h3>Generative AI (IBM)</h3><p>Feb 2025 - Credential: VVUR5FYIHIC5</p></div>
+      <div class="card"><h3>Python for Data Science (IBM)</h3><p>Feb 2025 - Credential: X5IK6KJYYOZV</p></div>
+      <div class="card"><h3>Data Analyst Capstone (Coursera)</h3><p>Jul 2024</p></div>
+      <div class="card"><h3>Intro to Front-End Dev (Meta)</h3><p>Jan 2024</p></div>
+      <div class="card"><h3>Machine Learning Project (UTA)</h3><p>May 2024 - Outstanding Project</p></div>
+      <div class="card"><h3>AWS Cloud Training</h3><p>Apr 2024 - Credential: nxhzlpdnf2</p></div>
     </div>
   </section>
 
   <footer>
-    Connect with me: 
-    <a href="https://github.com/099Misbah">GitHub</a> | 
-    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
+    <p>Connect with me:
+      <a href="https://github.com/099Misbah">GitHub</a> |
+      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
+    </p>
   </footer>
 </body>
 </html>
